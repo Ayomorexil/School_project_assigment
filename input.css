@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* .ddpcontainer{
+
+};
+.ddpcontainer .dppcontent :hover{
+display:block;
+cursor: pointer;
+}  */
