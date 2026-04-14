@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black flex items-center justify-center min-h-screen">
+
+  <div class="w-80 bg-gray-800 text-white p-4 rounded-2xl">
+    
+    <!-- Display -->
+    <div id="display" class="text-right text-5xl mb-6 break-all">0</div>
+
+    <!-- Buttons -->
+    <div class="grid grid-cols-4 gap-3">
+
+      <!-- Row 1 -->
+      <button class="btn-gray" onclick="clearDisplay()">AC</button>
+      <button class="btn-gray" onclick="toggleSign()">±</button>
+      <button class="btn-gray" onclick="percent()">%</button>
+      <button class="btn-orange" onclick="setOperator('/')">÷</button>
+
+      <!-- Row 2 -->
+      <button class="btn-dark" onclick="appendNumber(7)">7</button>
+      <button class="btn-dark" onclick="appendNumber(8)">8</button>
+      <button class="btn-dark" onclick="appendNumber(9)">9</button>
+      <button class="btn-orange" onclick="setOperator('*')">×</button>
+
+      <!-- Row 3 -->
+      <button class="btn-dark" onclick="appendNumber(4)">4</button>
+      <button class="btn-dark" onclick="appendNumber(5)">5</button>
+      <button class="btn-dark" onclick="appendNumber(6)">6</button>
+      <button class="btn-orange" onclick="setOperator('-')">−</button>
+
+      <!-- Row 4 -->
+      <button class="btn-dark" onclick="appendNumber(1)">1</button>
+      <button class="btn-dark" onclick="appendNumber(2)">2</button>
+      <button class="btn-dark" onclick="appendNumber(3)">3</button>
+      <button class="btn-orange" onclick="setOperator('+')">+</button>
+
+      <!-- Row 5 -->
+      <button class="btn-dark col-span-2 text-left pl-6" onclick="appendNumber(0)">0</button>
+      <button class="btn-dark" onclick="appendDecimal()">.</button>
+      <button class="btn-orange" onclick="calculate()">=</button>
+
+    </div>
+  </div>
+
+ 
+
+  
+  
+<script src="one.js"></script>
+</body>
+</html>
